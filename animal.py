@@ -1,7 +1,13 @@
 import sys
 
+def dog():
+    print("woof!woof!")
+
 def main():
-    default()
+    if sys.argv[1] == "dog":
+        dog()
+    else:
+        default()
 
 def default():
     print('hello,dyh')
